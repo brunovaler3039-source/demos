@@ -417,3 +417,40 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 .gv-card .gv-who{padding-top:16px;border-top:1px solid rgba(255,255,255,.06)}
 @media(max-width:1140px){.gv-cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:820px){.gv-cards{grid-template-columns:1fr;gap:16px}.gv-card{padding:24px;min-height:0}.gv-cards .gv-facts{min-height:220px}}
+
+.ar-flag{display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;padding:6px 12px;border-radius:999px;background:#0e0e0e;color:#e6cf9b;font-size:11px;font-weight:600;line-height:1;letter-spacing:.12em;text-transform:uppercase}
+.ar-flag::before{content:"";width:6px;height:6px;border-radius:50%;background:#d6b66d}
+.ar-t{display:flex;flex-direction:column;align-items:flex-start}
+#previdenciario .ar-card{box-shadow:0 30px 70px rgba(0,0,0,.14),0 0 0 1px rgba(214,182,109,.45)}
+
+.ar-sub{list-style:none;margin:0;padding:22px 30px 30px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;background:#fff;border-top:1px solid rgba(14,14,14,.07)}
+.ar-sub li{padding:14px 16px;border-left:2px solid #d6b66d;background:#faf6ec;border-radius:0 10px 10px 0;display:flex;flex-direction:column;gap:6px}
+.ar-sub b{font-size:14px;font-weight:600;line-height:1.2;color:#0e0e0e}
+.ar-sub span{font-size:12.500px;line-height:1.4;color:#555}
+@media(max-width:991px){.ar-sub{grid-template-columns:repeat(2,1fr);padding:18px 24px 24px}}
+@media(max-width:767px){.ar-sub{grid-template-columns:1fr;gap:10px;padding:14px 18px 18px}}
+/* previdenciário: cartão inteiro cabe na tela */
+#previdenciario .ar-img{aspect-ratio:auto;height:clamp(190px,32vh,330px)}
+#previdenciario .ar-info{padding:22px 30px 18px}
+#previdenciario .ar-t{font-size:clamp(30px,3.6vw,44px)}
+.ar-sub{padding:16px 30px 24px;gap:12px}
+.ar-sub li{padding:11px 14px;gap:4px}
+@media(max-width:991px){.ar-sub{padding:14px 22px 22px}}
+@media(max-width:767px){#previdenciario .ar-img{height:clamp(120px,19vh,170px)}#previdenciario .ar-info{padding:14px 16px 10px}.ar-sub{grid-template-columns:1fr 1fr;gap:8px;padding:10px 14px 14px}.ar-sub li{padding:9px 10px}.ar-sub b{font-size:12.5px}.ar-sub span{font-size:11px;line-height:1.3}}
+#previdenciario .ar-img{height:clamp(190px,37vh,350px)}
+#previdenciario .ar-img img{object-position:50% 38%}
+@media(max-width:767px){#previdenciario .ar-img{height:clamp(110px,19vh,170px)}}
+@media(min-width:768px){.hero-cut{height:clamp(360px,calc(100svh - 445px),720px)}}
+
+@media(min-width:992px){.ar-sub{grid-template-columns:repeat(5,1fr);gap:10px}.ar-sub li{padding:11px 11px}.ar-sub b{font-size:13px}.ar-sub span{font-size:12px}}
+@media(max-width:991px){.ar-sub li:last-child{grid-column:1/-1}}
+@media(min-width:768px){#previdenciario .ar-img{height:clamp(150px,33vh,350px)}}
+@media(max-width:767px) and (max-height:700px){.ar-sub span{display:none}.ar-sub li{padding:8px 10px}}
+@media(max-width:700px){.about{min-height:750px}}
+/* nome do advogado todo em dourado */
+.about h2,.tb-brand,.brand{color:var(--gold)}
+
+/* celular: o texto termina antes da foto começar */
+@media(max-width:700px){
+ .about{min-height:0;padding-bottom:calc(74vw * var(--ph-prop, 1.36) + 8px)}
+}
